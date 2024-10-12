@@ -1,4 +1,4 @@
-# Primer Tm and Ta calculation
+# Primer Tm, PCR product Tm, primer Ta, and annealing temperature calculation
 
 # Loop for two primer sets
 
@@ -66,22 +66,6 @@ for i in range (2):
 
     print("The reverse primer Tm is:", str(float(reverse_primer_Tm)) + "°C")
 
-# Initialise the lower primer Tm
-
-    lower_primer_Tm = 0
-
-# Define the lower primer Tm
-
-    if forward_primer_Tm > reverse_primer_Tm:
-        lower_primer_Tm = reverse_primer_Tm
-    elif forward_primer_Tm < reverse_primer_Tm:
-        lower_primer_Tm = forward_primer_Tm
-    elif forward_primer_Tm == reverse_primer_Tm:
-        lower_primer_Tm = forward_primer_Tm
-
-# Output the lower primer Tm 
-
-    print("The lower primer Tm is:", str(float(lower_primer_Tm)) + "°C")
 
 # Enter the PCR product sequence
 
@@ -114,10 +98,34 @@ for i in range (2):
 
     print("The PCR product Tm is:", str(round(PCR_product_Tm, 1)) + "°C")
 
-# Calculate the primer Ta
+# Calculate the forward primer Ta
 
-    Ta = 0.3*lower_primer_Tm+0.7*PCR_product_Tm-14.
+    forward_primer_Ta = 0.3*forward_primer_Tm+0.7*PCR_product_Tm-14.
 
-# Output the primer Ta
+# Output the forward primer Ta
 
-    print("The primer Ta is", str(round(Ta, 1)) + "°C")
+    print("The forward primer Ta is", str(round(forward_primer_Ta, 1)) + "°C")
+    
+# Calculate the reverse primer Ta
+
+    reverse_primer_Ta = 0.3*reverse_primer_Tm+0.7*PCR_product_Tm-14.
+
+# Output the forward primer Ta
+
+    print("The reverse primer Ta is", str(round(reverse_primer_Ta, 1)) + "°C")
+
+# Initialise the annealing temperature
+
+    annealing_temperature = 0
+
+# Compare the forward primer Ta and the reverse primer Ta
+
+    if forward_primer_Ta > reverse_primer_Ta:
+        annealing_temperature = reverse_primer_Ta
+    elif forward_primer_Ta < reverse_primer_Ta:
+        annealing_temperature = forward_primer_Ta
+    elif forward_primer_Ta == reverse_primer_Ta:
+        annealing_temperature = reverse_primer_Ta
+
+    print("The annealing temperature is:", str(round(annealing_temperature, 1)) + "°C")
+        
