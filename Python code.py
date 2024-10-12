@@ -126,5 +126,7 @@ for i in range (2):
     elif forward_primer_Ta == reverse_primer_Ta:
         annealing_temperature = reverse_primer_Ta
 
+# Output the annealing temperature
+    
     print("The annealing temperature is:", str(round(annealing_temperature, 1)) + "°C")
         
