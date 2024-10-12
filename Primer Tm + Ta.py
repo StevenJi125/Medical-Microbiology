@@ -116,8 +116,6 @@ for i in range (2):
 
 # Calculate the primer Ta
 
-    PCR_product_Tm = 64.9+41*(G+C-16.4)/(A+T+G+C)
-
     primer_Ta = 0.3*lower_primer_Tm+0.7*PCR_product_Tm-14.
 
 # Output the primer Ta
