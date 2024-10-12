@@ -79,7 +79,7 @@ for i in range (2):
     elif forward_primer_Tm == reverse_primer_Tm:
         lower_primer_Tm = forward_primer_Tm
 
-# Output the lower primer Tm
+# Output the lower primer Tm 
 
     print("The lower primer Tm is:", str(float(lower_primer_Tm)) + "°C")
 
