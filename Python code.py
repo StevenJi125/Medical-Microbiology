@@ -66,7 +66,6 @@ for i in range (2):
 
     print("The reverse primer Tm is:", str(float(reverse_primer_Tm)) + "°C")
 
-
 # Enter the PCR product sequence
 
     PCR_product = input("Please enter your PCR product:\n")
