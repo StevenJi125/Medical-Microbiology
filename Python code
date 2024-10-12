@@ -116,8 +116,8 @@ for i in range (2):
 
 # Calculate the primer Ta
 
-    primer_Ta = 0.3*lower_primer_Tm+0.7*PCR_product_Tm-14.
+    Ta = 0.3*lower_primer_Tm+0.7*PCR_product_Tm-14.
 
 # Output the primer Ta
 
-    print("The primer Ta is", str(round(primer_Ta, 1)) + "°C")
+    print("The primer Ta is", str(round(Ta, 1)) + "°C")
