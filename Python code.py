@@ -113,20 +113,20 @@ for i in range (2):
 
     print("The reverse primer Ta is", str(round(reverse_primer_Ta, 1)) + "°C")
 
-# Initialise the annealing temperature
+# Initialise the annealing condition
 
-    annealing_temperature = 0
+    annealing_condition = 0
 
 # Compare the forward primer Ta and the reverse primer Ta
 
     if forward_primer_Ta > reverse_primer_Ta:
-        annealing_temperature = reverse_primer_Ta
+        annealing_condition = reverse_primer_Ta
     elif forward_primer_Ta < reverse_primer_Ta:
-        annealing_temperature = forward_primer_Ta
+        annealing_condition = forward_primer_Ta
     elif forward_primer_Ta == reverse_primer_Ta:
-        annealing_temperature = reverse_primer_Ta
+        annealing_condition = reverse_primer_Ta
 
-# Output the annealing temperature
+# Output the annealing condition
     
-    print("The annealing temperature is:", str(round(annealing_temperature, 1)) + "°C")
+    print("The annealing condition is:", str(round(annealing_condition, 1)) + "°C")
         
