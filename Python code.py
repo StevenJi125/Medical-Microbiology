@@ -33,7 +33,7 @@ for i in range (2):
 
 # Output the forward primer Tm
 
-    print("The forward primer Tm is:", str(float(forward_primer_Tm)) + "°C")
+    print("The forward primer Tm is:", str(float(forward_primer_Tm)), "°C")
 
 # Enter the reverse primer
 
@@ -64,7 +64,7 @@ for i in range (2):
 
 # Output the reverse primer Tm
 
-    print("The reverse primer Tm is:", str(float(reverse_primer_Tm)) + "°C")
+    print("The reverse primer Tm is:", str(float(reverse_primer_Tm)), "°C")
 
 # Enter the PCR product sequence
 
@@ -95,7 +95,7 @@ for i in range (2):
 
 # Output the PCR product Tm
 
-    print("The PCR product Tm is:", str(round(PCR_product_Tm, 1)) + "°C")
+    print("The PCR product Tm is:", str(round(PCR_product_Tm, 1)), "°C")
 
 # Calculate the forward primer Ta
 
@@ -103,7 +103,7 @@ for i in range (2):
 
 # Output the forward primer Ta
 
-    print("The forward primer Ta is", str(round(forward_primer_Ta, 1)) + "°C")
+    print("The forward primer Ta is", str(round(forward_primer_Ta, 1)), "°C")
     
 # Calculate the reverse primer Ta
 
@@ -111,7 +111,7 @@ for i in range (2):
 
 # Output the forward primer Ta
 
-    print("The reverse primer Ta is", str(round(reverse_primer_Ta, 1)) + "°C")
+    print("The reverse primer Ta is", str(round(reverse_primer_Ta, 1)), "°C")
 
 # Initialise the annealing condition
 
@@ -128,5 +128,5 @@ for i in range (2):
 
 # Output the annealing condition
     
-    print("The annealing condition is:", str(round(annealing_condition, 1)) + "°C")
+    print("The annealing condition is:", str(round(annealing_condition, 1)), "°C")
         
