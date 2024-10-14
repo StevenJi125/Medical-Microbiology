@@ -1,6 +1,6 @@
 # Primer Tm, PCR product Tm, primer Ta, and annealing condition calculation
 
-# Loop for two primer sets
+# Loop for two primer pairs
 
 for i in range (2):
 
