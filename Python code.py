@@ -29,7 +29,7 @@ for i in range (2):
 
 # Calculate the forward primer Tm
 
-    Calculated_forward_primer_Tm = 2*(A+T)+4*(G+C)
+    Calculated_forward_primer_Tm = 2*(A+T)+4*(C+G)
 
 # Output the forward primer Tm
 
@@ -60,7 +60,7 @@ for i in range (2):
 
 # Calculate the reverse primer Tm
 
-    Calculated_reverse_primer_Tm = 2*(A+T)+4*(G+C)
+    Calculated_reverse_primer_Tm = 2*(A+T)+4*(C+G)
 
 # Output the reverse primer Tm
 
@@ -91,7 +91,7 @@ for i in range (2):
         
 # Calculate the PCR product Tm
 
-    PCR_product_Tm = 64.9+41*(G+C-16.4)/(A+T+G+C)
+    PCR_product_Tm = 64.9+41*(C+G-16.4)/(A+T+C+G)
 
 # Output the PCR product Tm
 
