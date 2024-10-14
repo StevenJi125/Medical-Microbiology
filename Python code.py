@@ -107,9 +107,9 @@ for i in range (2):
     
 # Calculate the reverse primer Ta
 
-    reverse_primer_Ta = 0.3*Calculated_reverse_primer_Tm+0.7*PCR_product_Tm-14.
+    reverse_primer_Ta = 0.3*Calculated_reverse_primer_Tm+0.7*PCR_product_Tm-14.9.
 
-# Output the forward primer Ta
+# Output the reverse primer Ta
 
     print("The reverse primer Ta is", str(round(reverse_primer_Ta, 1)), "°C")
 
