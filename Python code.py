@@ -29,11 +29,11 @@ for i in range (2):
 
 # Calculate the forward primer Tm
 
-    forward_primer_Tm = 2*(A+T)+4*(G+C)
+    Calculated_forward_primer_Tm = 2*(A+T)+4*(G+C)
 
 # Output the forward primer Tm
 
-    print("The forward primer Tm is:", str(float(forward_primer_Tm)), "°C")
+    print("The forward primer Tm is:", str(float(Calculated_forward_primer_Tm)), "°C")
 
 # Enter the reverse primer
 
@@ -60,11 +60,11 @@ for i in range (2):
 
 # Calculate the reverse primer Tm
 
-    reverse_primer_Tm = 2*(A+T)+4*(G+C)
+    Calculated_reverse_primer_Tm = 2*(A+T)+4*(G+C)
 
 # Output the reverse primer Tm
 
-    print("The reverse primer Tm is:", str(float(reverse_primer_Tm)), "°C")
+    print("The reverse primer Tm is:", str(float(Calculated_reverse_primer_Tm)), "°C")
 
 # Enter the PCR product sequence
 
@@ -99,7 +99,7 @@ for i in range (2):
 
 # Calculate the forward primer Ta
 
-    forward_primer_Ta = 0.3*forward_primer_Tm+0.7*PCR_product_Tm-14.
+    forward_primer_Ta = 0.3*Calculated_forward_primer_Tm+0.7*PCR_product_Tm-14.
 
 # Output the forward primer Ta
 
@@ -107,7 +107,7 @@ for i in range (2):
     
 # Calculate the reverse primer Ta
 
-    reverse_primer_Ta = 0.3*reverse_primer_Tm+0.7*PCR_product_Tm-14.
+    reverse_primer_Ta = 0.3*Calculated_reverse_primer_Tm+0.7*PCR_product_Tm-14.
 
 # Output the forward primer Ta
 
