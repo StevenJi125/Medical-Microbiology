@@ -1,4 +1,4 @@
-# Primer Tm, PCR product Tm, primer Ta, and annealing temperature calculation
+# Primer Tm, PCR product Tm, primer Ta, and annealing condition calculation
 
 # Loop for two primer sets
 
@@ -66,8 +66,8 @@ for i in range (2):
 
     print("The reverse primer Tm is:", str(float(Calculated_reverse_primer_Tm)), "°C")
 
-# Enter the PCR product sequence
-
+# Enter the PCR product
+    
     PCR_product = input("Please enter your PCR product:\n")
 
 # Initialise the nucleotide count of the PCR product
