@@ -99,7 +99,7 @@ for i in range (2):
 
 # Calculate the forward primer Ta
 
-    forward_primer_Ta = 0.3*Calculated_forward_primer_Tm+0.7*PCR_product_Tm-14.9.
+    forward_primer_Ta = 0.3*Calculated_forward_primer_Tm+0.7*PCR_product_Tm-14.9
 
 # Output the forward primer Ta
 
@@ -107,7 +107,7 @@ for i in range (2):
     
 # Calculate the reverse primer Ta
 
-    reverse_primer_Ta = 0.3*Calculated_reverse_primer_Tm+0.7*PCR_product_Tm-14.9.
+    reverse_primer_Ta = 0.3*Calculated_reverse_primer_Tm+0.7*PCR_product_Tm-14.9
 
 # Output the reverse primer Ta
 
